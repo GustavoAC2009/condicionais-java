@@ -14,12 +14,12 @@ public class Ex19 {
         double lim = leitor.nextDouble();
 
 
-        if (vel <= lim) { System.out.println("sem multa"); }
-        
+        if (vel <= lim) { System.out.println("Sem Multa"); }
 
-        else if (vel <= lim * 1.20) { System.out.println("Multa leve"); }
-        else if (vel <= lim * 1.50) { System.out.println("Multa grave"); }
-        else { System.out.println("Multa gravissima + suspensao"); }
+
+        else if (vel <= lim * 1.20) { System.out.println("Multa Leve"); }
+        else if (vel <= lim * 1.50) { System.out.println("Multa Grave"); }
+        else { System.out.println("Multa Gravíssima + Suspensão"); }
 
 
 

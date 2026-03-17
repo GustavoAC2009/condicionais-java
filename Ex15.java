@@ -1,5 +1,7 @@
 import java.util.Scanner;
 public class Ex15 {
+
+    
         public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
@@ -9,9 +11,9 @@ public class Ex15 {
          
         System.out.println("Usuário: ");
         String u = leitor.next();
-        
+
         System.out.println("Senha: ");
-        String s = leitor.next();
+         String s = leitor.next();
 
         String msg = (u.equals(usuarioFix) && s.equals(senhaFix)) ? "Acesso permitido" : "Acesso negado";
         System.out.println(msg);

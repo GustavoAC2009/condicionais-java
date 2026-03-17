@@ -13,7 +13,7 @@ public class Ex16 {
 
         else if (n % 5 == 0) { System.out.println("Multiplo apenas de 5"); }
 
-        else { System.out.println("Nao e multiplo"); }
+        else { System.out.println("Não é multiplo"); }
 
     
     
