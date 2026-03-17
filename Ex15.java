@@ -6,10 +6,18 @@ public class Ex15 {
 
         String usuarioFix = "admin";
         String senhaFix = "1234";
+         
+        System.out.println("Usuário: ");
         String u = leitor.next();
+        
+        System.out.println("Senha: ");
         String s = leitor.next();
-        String msg = (u.equals(uFix) && s.equals(sFix)) ? "Acesso permitido" : "Acesso negado";
+
+        String msg = (u.equals(usuarioFix) && s.equals(senhaFix)) ? "Acesso permitido" : "Acesso negado";
         System.out.println(msg);
+
+        leitor.close();
+
     }
 
 }
