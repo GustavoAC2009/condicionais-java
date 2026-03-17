@@ -28,6 +28,7 @@ public class Ex9 {
             default: System.out.println("Dia invalido");
 
         }
+        leitor.close();
 
     }
 

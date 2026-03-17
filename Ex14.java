@@ -26,5 +26,7 @@ public class Ex14 {
          else {
             System.out.println(n3);
         }
+
+        leitor.close();
     }
 }

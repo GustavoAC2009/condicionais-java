@@ -25,5 +25,8 @@ public class Ex7 {
                 System.out.println("Escaleno");
             }
         }
+
+
+        leitor.close();
     }
 }

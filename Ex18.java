@@ -23,8 +23,11 @@ public class Ex18 {
             case 8: System.out.println("VIII"); break;
             case 9: System.out.println("IX"); break;
             case 10: System.out.println("X"); break;
-        }
 
+
+            
+        }
+leitor.close();
     }
 
 }

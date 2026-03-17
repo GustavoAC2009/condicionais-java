@@ -15,6 +15,9 @@ public class Ex6 {
             System.out.println("Nao bissexto");
         }
 
+
+        leitor.close();
+
     }
 
 }

@@ -27,5 +27,6 @@ public class Ex20 {
         System.out.println(res);
 
 
+        leitor.close();
     }
 } 

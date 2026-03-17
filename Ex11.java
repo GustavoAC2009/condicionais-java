@@ -17,6 +17,10 @@ public class Ex11 {
         else {
             System.out.println("R$ 20,00");
         }
+
+
+
+        leitor.close();
     }
 
 }

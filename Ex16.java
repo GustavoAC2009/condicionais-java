@@ -15,6 +15,8 @@ public class Ex16 {
 
         else { System.out.println("Não é multiplo"); }
 
+        leitor.close();
+
     
     
     }

@@ -40,7 +40,13 @@ public class Ex13 {
                 break;
 
         }
+
+
+
+        leitor.close();
     }
+
+
   
     
 }

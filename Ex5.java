@@ -22,6 +22,7 @@ public class Ex5 {
                 if (n2 != 0) {
                     System.out.println(n1 / n2);
                 } 
+
                 else {
                     System.out.println("Erro: Divisao por zero");
                 }
@@ -30,6 +31,8 @@ public class Ex5 {
       
       
             }
+
+            leitor.close();
 
         }
 }

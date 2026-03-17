@@ -22,7 +22,7 @@ public class Ex8 {
      
         System.out.println((imc >= 18.5 && imc < 25) ? "Dentro" : "Fora");
 
-
+leitor.close();
  
     }
 

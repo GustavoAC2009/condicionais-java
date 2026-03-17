@@ -14,6 +14,8 @@ import java.util.Scanner;
         System.out.println(resultado);
 
   
+
+        leitor.close();
     }
 
 }

@@ -15,6 +15,12 @@ public class Ex3 {
         } else {
             System.out.println("Reprovado");
         }
+
+
+
+
+
+        leitor.close();
     }
 
 }

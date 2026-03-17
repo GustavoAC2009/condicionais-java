@@ -13,6 +13,8 @@ public class Ex17 {
 
         else { System.out.println(v); }
         
+     
 
+        leitor.close();
     }
 }

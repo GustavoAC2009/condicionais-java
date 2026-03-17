@@ -14,6 +14,10 @@ public class Ex4 {
         String res = (temp < 15) ? "Frio" : (temp <= 25) ? "Agradável" : "Quente";
         System.out.println(res);
 
+
+
+
+        leitor.close();
     }
 
 }

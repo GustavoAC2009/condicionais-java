@@ -16,7 +16,7 @@ public class Ex12 {
         else if (nota >= 5) { System.out.println("C"); }
 
         else { System.out.println("D"); }
-
+leitor.close();
 
  
     }

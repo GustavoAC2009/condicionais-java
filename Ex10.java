@@ -11,7 +11,7 @@ import java.util.Scanner;
         String res = (num > 0) ? "Positivo" : (num < 0) ? "Negativo" : "Zero";
         System.out.println(res);
 
- 
+ leitor.close();
     }
     
 }
