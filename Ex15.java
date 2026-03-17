@@ -4,8 +4,8 @@ public class Ex15 {
 
         Scanner leitor = new Scanner(System.in);
 
-        String uFix = "admin";
-        String sFix = "1234";
+        String usuarioFix = "admin";
+        String senhaFix = "1234";
         String u = leitor.next();
         String s = leitor.next();
         String msg = (u.equals(uFix) && s.equals(sFix)) ? "Acesso permitido" : "Acesso negado";
