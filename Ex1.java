@@ -6,7 +6,8 @@ import java.util.Scanner;
     public static void main(String[] args) {
 
          Scanner leitor = new Scanner(System.in);
-
+  
+        System.out.println("Digite um número para saber se é Ímpar ou Par: ");
          int numero = leitor.nextInt();
  
         String resultado = (numero % 2 == 0) ? "Par" : "Ímpar";
