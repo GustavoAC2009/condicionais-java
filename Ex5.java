@@ -14,6 +14,8 @@ public class Ex5 {
         System.out.println("Qual o segundo número? ");
         double n2 = leitor.nextDouble();
 
+        System.out.println("Informe um operador: 1- ADIÇÃO 2- SUBTRAÇÃO 3- MULTIPLICAÇÃO 4- DIVISÃO");
+        int op = leitor.nextInt();
 
         double ad = n1 + n2;
         double sub = n1 - n2;
@@ -23,13 +25,21 @@ public class Ex5 {
     
 
         switch (op) {
-            case 1: System.out.println("O resultado é: "); break;
-            case 2: System.out.println(); break;
-            case 3: System.out.println(); break;
-            case 4: System.out.println(); break;
+            case 1:
+                 System.out.println("O resultado é: "+ad); break;
+
+            case 2:
+                 System.out.println("O resultado é: "+sub); break; 
+
+            case 3:
+                 System.out.println("O resultado é: "+mult); break;
+
+            default:
+                 System.out.println("O resultado é: "+vid); 
+
 
                 if (n2 != 0) {
-                    System.out.println(n1 / n2);
+                    System.out.println(vid);
                 } 
 
                 else {
@@ -43,7 +53,7 @@ public class Ex5 {
       
             }  
             
-            System.out.println("O resultado é: " +);
+            
 
             leitor.close();
 

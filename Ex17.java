@@ -5,6 +5,8 @@ public class Ex17 {
 
 
         Scanner leitor = new Scanner(System.in);
+
+        System.out.println("Digite algum número para desconto: ");
         double v = leitor.nextDouble();
 
         if (v > 500) { System.out.println(v * 0.80); }

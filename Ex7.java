@@ -8,8 +8,13 @@ public class Ex7 {
 
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Digite o A: ");
         int a = leitor.nextInt();
+
+        System.out.println("Digite o B: ");
         int b = leitor.nextInt();
+
+        System.out.println("Digite o C: ");
         int c = leitor.nextInt();
 
         if (a + b > c && a + c > b && b + c > a) {

@@ -5,7 +5,9 @@ public class Ex16 {
     public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
+        
 
+        System.out.println("Digite o número que deseja: ");
         int n = leitor.nextInt();
         if (n % 3 == 0 && n % 5 == 0) { System.out.println("Multiplo de 3 e 5"); }
 

@@ -6,6 +6,7 @@ public class Ex9 {
         
         Scanner leitor = new Scanner(System.in);
 
+        System.out.println("Digite o Dia: ");
         int dia = leitor.nextInt();
 
         switch (dia) {

@@ -7,8 +7,14 @@ public class Ex8 {
     public static void main(String[] args) {
  
         Scanner leitor = new Scanner(System.in);
+
+        System.out.println("Digite o seu Peso: ");
         double peso = leitor.nextDouble();
+
+        System.out.println("Digite a sua Altura: ");
         double altura = leitor.nextDouble();
+
+
          double imc = peso / (altura * altura);
 
         if (imc < 18.5) { System.out.println("Abaixo do peso"); }

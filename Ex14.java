@@ -9,7 +9,8 @@ public class Ex14 {
 
     
     Scanner leitor = new Scanner(System.in);
-
+         
+        System.out.println("Digite os números de sua escolha: ");
         int n1 = leitor.nextInt();
         int n2 = leitor.nextInt();
         int n3 = leitor.nextInt();
