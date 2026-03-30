@@ -228,4 +228,254 @@ import java.util.Scanner;
 
 
 
+}
 
+
+
+     private static void cancelar() {
+
+        System.out.print("Fila (A-L): ");
+
+        int f = ler.next().toUpperCase().charAt(0) - 'A';
+
+        System.out.print("Col (1-12): ");
+
+        int c = ler.nextInt() - 1;
+
+        if (f >= 0 && f < 12 && c >= 0 && c < 12 && mapa[f][c] == 'R') {
+
+            mapa[f][c] = 'L';
+
+            System.out.println("Cancelado. Reembolso: R$" + (preco * 0.5));
+
+        }
+
+    }
+
+
+
+
+
+ private static void relatorio() {
+
+
+
+        int l = 0, r = 0, x = 0;
+
+
+
+        for
+
+         (char[] f : mapa) {
+
+            
+
+            for (char m : f) {
+
+                
+
+                if (m == 'L') l++; else if (m == 'R') r++; else x++;
+
+            }
+
+
+
+        }
+
+        double total = x * preco;
+
+        double reserva = r * (preco * 0.5);
+
+        System.out.println("\n--- FINANCEIRO ---");
+
+        System.out.println("L: " + l + " | R: " + r + " | X: " + x);
+
+        System.out.println("Arrecadado: R$" + total);
+
+        System.out.println("Em Reservas: R$" + reserva);
+
+        System.out.println("Potencial: R$" + (total + reserva + (l * preco)));
+
+    }
+
+
+
+
+
+    private static void menuEx() {
+
+        int pg = 0, tot = 20, it = 7;
+
+        int tPg = (int) Math.ceil((double) tot / it);
+
+        while (true) {
+
+            int in = pg * it, fi = Math.min(in + it, tot);
+
+
+
+            System.out.println("\n--- EXERCÍCIOS (Pág " + (pg + 1) + "/" + tPg + ") ---");
+
+
+
+            for (int i = in; i < fi; i++) System.out.println((i + 1) + ". Ex" + (i + 1));
+
+
+
+            String a = (pg > 0) ? "[A] Ant " : "";
+
+
+
+            String p = (pg < tPg - 1) ? "[P] Prox " : "";
+
+
+
+            System.out.print("\n" + a + p + "[V] Voltar: ");
+
+
+
+            String res = ler.next().toUpperCase();
+
+
+
+            if (res.equals("V")) break;
+
+
+
+            if (res.equals("P") && pg < tPg - 1) pg++;
+
+
+
+            else if (res.equals("A") && pg > 0) pg--;
+
+
+
+            else {
+
+                try {
+
+                    int n = Integer.parseInt(res);
+
+                    if (n >= 1 && n <= 20) rodar(n);
+
+               
+
+                } catch (Exception e) {}
+
+         
+
+         
+
+         
+
+            }
+
+    
+
+    }
+
+
+
+ }
+
+
+
+    private static void rodar(int n) {
+
+
+
+        String[] a = {};
+
+        switch (n) {
+
+            case 1: Ex1.main(a); break;
+
+
+
+            case 2: Ex2.main(a); break;
+
+
+
+            case 3: Ex3.main(a); break;
+
+
+
+            case 4: Ex4.main(a); break;
+
+
+
+            case 5: Ex5.main(a); break;
+
+
+
+            case 6: Ex6.main(a); break;
+
+
+
+            case 7: Ex7.main(a); break;
+
+
+
+            case 8: Ex8.main(a); break;
+
+
+
+            case 9: Ex9.main(a); break;
+
+
+
+            case 10: Ex10.main(a); break;
+
+
+
+            case 11: Ex11.main(a); break;
+
+
+
+            case 12: Ex12.main(a); break;
+
+
+
+            case 13: Ex13.main(a); break;
+
+
+
+            case 14: Ex14.main(a); break;
+
+
+
+            case 15: Ex15.main(a); break;
+
+
+
+            case 16: Ex16.main(a); break;
+
+
+
+            case 17: Ex17.main(a); break;
+
+
+
+            case 18: Ex18.main(a); break;
+
+
+
+            case 19: Ex19.main(a); break;
+
+
+
+            case 20: Ex20.main(a); break;
+
+
+
+        }
+
+
+
+   
+
+    }
+
+
+
+}
